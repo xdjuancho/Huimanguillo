@@ -1,65 +1,136 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f1e9; /* Color tierra claro */
-}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Huimanguillo, Tabasco</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f1e9; /* Color tierra claro */
+        }
 
-header {
-    background-color: #8B4513; /* Marrón tierra */
-    color: white;
-    text-align: center;
-    padding: 20px;
-}
+        header {
+            background-color: #8B4513; /* Marrón tierra */
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
 
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    background-color: #D2691E; /* Naranja tabasqueño */
-    text-align: center;
-}
+        header img {
+            max-width: 100%;
+            height: auto;
+        }
 
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            background-color: #D2691E; /* Naranja tabasqueño */
+            text-align: center;
+        }
 
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
 
-section {
-    padding: 20px;
-    text-align: center;
-}
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
 
-h2 {
-    color: #654321; /* Marrón oscuro */
-}
+        section {
+            padding: 20px;
+            text-align: center;
+        }
 
-ul {
-    list-style-type: none;
-    padding: 0;
-}
+        h2 {
+            color: #654321; /* Marrón oscuro */
+        }
 
-ul li {
-    margin: 10px 0;
-}
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
 
-a {
-    color: #006400; /* Verde selva */
-    text-decoration: none;
-    font-weight: bold;
-}
+        ul li {
+            margin: 10px 0;
+        }
 
-footer {
-    background-color: #8B4513;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
+        a {
+            color: #006400; /* Verde selva */
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer {
+            background-color: #8B4513;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer img {
+            max-width: 100px;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="https://www.example.com/imagen-portada.jpg" alt="Portada de Huimanguillo, Tabasco">
+    <h1>Bienvenidos a Huimanguillo, Tabasco</h1>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#comidas">Comidas Típicas</a></li>
+        <li><a href="#hoteles">Hoteles</a></li>
+        <li><a href="#turismo">Turismo</a></li>
+    </ul>
+</nav>
+
+<section id="comidas">
+    <h2>Comidas Típicas</h2>
+    <img src="https://www.example.com/comida-tipica.jpg" alt="Comida típica de Huimanguillo">
+    <ul>
+        <li>Pejelagarto a la talla</li>
+        <li>Tamales de cerdo</li>
+        <li>Atol de arroz</li>
+    </ul>
+</section>
+
+<section id="hoteles">
+    <h2>Hoteles</h2>
+    <img src="https://www.example.com/hotel.jpg" alt="Hotel en Huimanguillo">
+    <ul>
+        <li>Hotel San Antonio</li>
+        <li>Hotel La Selva</li>
+        <li>Hotel El Paraíso</li>
+    </ul>
+</section>
+
+<section id="turismo">
+    <h2>Lugares Turísticos</h2>
+    <img src="https://www.example.com/lugar-turistico.jpg" alt="Lugar turístico en Huimanguillo">
+    <ul>
+        <li>Playa de la Choca</li>
+        <li>El Cañón del Sumidero</li>
+        <li>Laguna de las Ilusiones</li>
+    </ul>
+</section>
+
+<footer>
+    <img src="https://www.example.com/logo.jpg" alt="Logo de Huimanguillo">
+    <p>&copy; 2025 Huimanguillo, Tabasco</p>
+</footer>
+
+</body>
+</html>
