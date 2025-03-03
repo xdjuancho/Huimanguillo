@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -13,10 +13,12 @@
         }
 
         header {
-            background-color: #8B4513; /* Marrón tierra */
+            background-image: url('encabezado.jpg'); /* Imagen de fondo */
+            background-size: cover;
+            background-position: center;
             color: white;
             text-align: center;
-            padding: 20px;
+            padding: 50px;
         }
 
         nav ul {
@@ -61,6 +63,28 @@
             font-weight: bold;
         }
 
+        .img-container img {
+            width: 80%;
+            max-width: 400px;
+            display: block;
+            margin: 0 auto;
+            border-radius: 10px;
+        }
+
+        .video-container {
+            position: relative;
+            width: 80%;
+            max-width: 800px;
+            margin: 20px auto;
+            aspect-ratio: 16 / 9;
+        }
+
+        .video-container iframe {
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+        }
+
         footer {
             background-color: #8B4513;
             color: white;
@@ -91,16 +115,19 @@
     <section id="inicio">
         <h2>Bienvenido a Huimanguillo</h2>
         <p>Huimanguillo es conocido por su riqueza natural, arqueológica y gastronómica. Desde sus hermosos paisajes hasta su comida típica, este municipio es un destino imperdible.</p>
+        <div class="img-container">
+            <img src="huimanguillo.jpg" alt="Paisaje de Huimanguillo">
+        </div>
     </section>
 
     <section id="comidas">
         <h2>Comidas Típicas</h2>
         <p>Estos son algunos de los platillos más representativos de Huimanguillo:</p>
         <ul>
-            <li>Pepita con carne</li>
-            <li>Tamal de chipilín</li>
-            <li>Robalo a la tabasqueña</li>
-            <li>Piguas en salsa</li>
+            <li><img src="pepita-con-carne.jpg" alt="Pepita con carne" width="200"> Pepita con carne</li>
+            <li><img src="tamal-chipilin.jpg" alt="Tamal de chipilín" width="200"> Tamal de chipilín</li>
+            <li><img src="robalo.jpg" alt="Robalo a la tabasqueña" width="200"> Robalo a la tabasqueña</li>
+            <li><img src="piguas.jpg" alt="Piguas en salsa" width="200"> Piguas en salsa</li>
         </ul>
     </section>
 
@@ -108,9 +135,15 @@
         <h2>Lugares Turísticos</h2>
         <p>Algunos de los mejores lugares para visitar en Huimanguillo:</p>
         <ul>
-            <li><a href="https://goo.gl/maps/QxjA1T8QK6E2" target="_blank">Zona Arqueológica de Malpasito</a></li>
-            <li><a href="https://goo.gl/maps/Z6jLwVVj8mB2" target="_blank">Cascadas de Villa Luz</a></li>
-            <li><a href="https://goo.gl/maps/7gFv8v5NJq32" target="_blank">Cerro El Madrigal</a></li>
+            <li><img src="malpasito.jpg" alt="Zona Arqueológica de Malpasito" width="250"> 
+                <a href="https://goo.gl/maps/QxjA1T8QK6E2" target="_blank">Zona Arqueológica de Malpasito</a>
+            </li>
+            <li><img src="cascadas.jpg" alt="Cascadas de Villa Luz" width="250"> 
+                <a href="https://goo.gl/maps/Z6jLwVVj8mB2" target="_blank">Cascadas de Villa Luz</a>
+            </li>
+            <li><img src="cerro-madrigal.jpg" alt="Cerro El Madrigal" width="250"> 
+                <a href="https://goo.gl/maps/7gFv8v5NJq32" target="_blank">Cerro El Madrigal</a>
+            </li>
         </ul>
     </section>
 
@@ -118,10 +151,29 @@
         <h2>Hoteles y Restaurantes</h2>
         <p>Algunas opciones para hospedarte y disfrutar de la gastronomía local:</p>
         <ul>
-            <li><a href="https://goo.gl/maps/9LJgZ" target="_blank">Hotel Los Pinos</a></li>
-            <li><a href="https://goo.gl/maps/XD9y6" target="_blank">Restaurante El Mangal</a></li>
-            <li><a href="https://goo.gl/maps/Z7Bg3" target="_blank">Cabañas Las Cascadas</a></li>
+            <li><img src="hotel-los-pinos.jpg" alt="Hotel Los Pinos" width="250"> 
+                <a href="https://goo.gl/maps/9LJgZ" target="_blank">Hotel Los Pinos</a>
+            </li>
+            <li><img src="restaurante-mangal.jpg" alt="Restaurante El Mangal" width="250"> 
+                <a href="https://goo.gl/maps/XD9y6" target="_blank">Restaurante El Mangal</a>
+            </li>
+            <li><img src="cabanas-cascadas.jpg" alt="Cabañas Las Cascadas" width="250"> 
+                <a href="https://goo.gl/maps/Z7Bg3" target="_blank">Cabañas Las Cascadas</a>
+            </li>
         </ul>
+    </section>
+
+    <section>
+        <h2>Descubre Huimanguillo, Tabasco</h2>
+        <p>Disfruta de este video sobre Huimanguillo y conoce más sobre sus atractivos turísticos.</p>
+
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/uPZ8lxtSA3w" 
+                title="Huimanguillo Tabasco" 
+                frameborder="0" 
+                allowfullscreen>
+            </iframe>
+        </div>
     </section>
 
     <footer>
@@ -129,13 +181,4 @@
     </footer>
 
 </body>
-</html>
-<h2>Descubre Huimanguillo, Tabasco</h2>
-<p>Disfruta de este video sobre Huimanguillo y conoce más sobre sus atractivos turísticos.</p>
-
-<iframe width="560" height="315" 
-    src="https://www.youtube.com/embed/uPZ8lxtSA3w" 
-    title="Huimanguillo Tabasco" 
-    frameborder="0" 
-    allowfullscreen>
-</iframe>
+</html>           
